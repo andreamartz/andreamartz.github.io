@@ -14,3 +14,8 @@
 .btn-prj-info {
   border-radius: 7px;
 }
+
+.team-img {
+  box-shadow: var(--bs);
+  border-radius: 50%;
+}
