@@ -145,7 +145,7 @@ header {
 }
 
 .logo {
-    max-width: 100px;
+    max-width: 75px;
 }
 
 .nav {
@@ -215,11 +215,6 @@ header {
     opacity: 0;
 }
 
-
-
-
-
-
 .hamburger {
     display: block;
     position: relative;
@@ -285,13 +280,13 @@ header {
         align-self: start;
         grid-column: -1 / 1;
         grid-row: 2;
+        letter-spacing: 0;
         text-align: right;
         position: relative;
         left: -1.5em;
         width: calc(100% + 1.5em);
     }
 }
-
 
 
 /*  My services section  */
@@ -383,6 +378,17 @@ header {
       position: relative;
       z-index: 2;
   }
+}
+
+.contact:hover,
+.contact:focus {
+    font-weight: var(--fw-bold);
+}
+
+.contact {
+    text-decoration: none;
+    color: inherit;
+    
 }
 
 /* My Work */
