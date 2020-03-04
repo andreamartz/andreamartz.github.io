@@ -1,0 +1,13 @@
+/* Individual portfolio item styles */
+
+.portfolio-item-individual {
+    padding: 0 2em 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.btn-website-repo {
+  display: flex;
+  justify-content: space-evenly;
+  
+}
