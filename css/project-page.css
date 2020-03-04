@@ -9,5 +9,8 @@
 .btn-website-repo {
   display: flex;
   justify-content: space-evenly;
-  
+}
+
+.btn-prj-info {
+  border-radius: 7px;
 }
