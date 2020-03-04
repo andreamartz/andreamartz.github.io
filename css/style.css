@@ -29,7 +29,7 @@
 @media (min-width: 800px) {
     :root {
         --fs-h1: 4.5rem;
-        --fs-h2: 3.75rem;
+        --fs-h2: 3.5rem;
         --fs-h3: 1.5rem;
         --fs-body: 1.125rem;
     }
@@ -61,7 +61,7 @@ img {
 }
 
 p {
-    letter-spacing: .8px;
+    letter-spacing: 1px;
 }
 
 strong { font-weight: var(--fw-bold) }
