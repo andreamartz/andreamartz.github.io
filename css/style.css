@@ -60,6 +60,10 @@ img {
     max-width: 100%;
 }
 
+p {
+    letter-spacing: .8px;
+}
+
 strong { font-weight: var(--fw-bold) }
 
 :focus {
@@ -463,10 +467,3 @@ header {
 }
 
 
-/* Individual portfolio item styles */
-
-.portfolio-item-individual {
-    padding: 0 2em 2em;
-    max-width: 1000px;
-    margin: 0 auto;
-}
