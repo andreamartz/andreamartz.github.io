@@ -18,4 +18,5 @@
 .team-img {
   box-shadow: var(--bs);
   border-radius: 50%;
+  max-width: 175px;
 }
