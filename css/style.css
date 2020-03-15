@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/* Custom Properties, update these for your own design */
+/* Custom Properties */
 
 :root {
     --ff-primary: 'Source Sans Pro', sans-serif;
@@ -74,6 +74,7 @@ strong { font-weight: var(--fw-bold) }
 /* Buttons */
 
 .btn {
+    border-radius: 7px;
     display: inline-block;
     padding: 1em 2.5em;
     background: var(--clr-accent);

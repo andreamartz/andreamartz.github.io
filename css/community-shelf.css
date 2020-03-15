@@ -1,12 +1,32 @@
+/* Custom Properties - Project Specific */
+
+:root {
+  --ff-prj-primary: 'Arial', sans-serif;
+
+  --fs-prj-title: 1.125rem;
+  --fs-prj-body: .875rem;
+  
+  --clr-prj-lt-green: #d1eecc;
+  --clr-prj-blue-green: #76dbd1;
+  --clr-prj-dk-green: #57a99a;
+  --clr-prj-dark: #000;
+}
+
 /* Individual portfolio item styles */
 section {
   padding: 3em 2em;
+  margin: 0 auto;
+  max-width: 1000px;
 }
 
 .portfolio-item-individual {
     padding: 0 2em 2em;
-    max-width: 1000px;
     margin: 0 auto;
+}
+
+.btn--wrapper {
+  margin: 0 auto;
+  text-align: center;
 }
 
 /* Overview */
@@ -22,10 +42,6 @@ section {
     display: flex;
     justify-content: space-around;
   }
-}
-
-.btn-prj-info {
-  border-radius: 7px;
 }
 
 /* Team */
@@ -96,6 +112,110 @@ section {
 /* Theme, Audience, and Purpose */
 
 /* Content */
+.content--prj {
+  font-family: var(--ff-prj-primary);
+  font-size: var(--fs-prj-body);
+  color: var(--clr-prj-dark);
+  margin: 0;
+}
+
+.content__grid {
+  display: grid;
+  grid-gap: .5em;
+  grid-template-columns: 1fr 4fr;
+  margin: 3em auto;
+  align-items: center;
+  width: 600px;
+}
+
+.content--prj--title {
+  color: var(--clr-prj-dk-green);
+  font-size: var(--fs-prj-title);
+  align-self: end;
+}
+
+.content--prj--text {
+  color: var(--clr-prj-dark);
+  font-size: var(--fs-prj-body);
+  align-self: start;
+  line-height: 1;
+}
+
+.content--prj-icon-driver {
+  grid-column: 1 ;
+  grid-row: 1 / span 2;
+}
+
+.content--prj-title-driver {
+  grid-column: 2 ;
+  grid-row: 1;
+}
+
+.content--prj-text-driver {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.content--prj-icon-gala {
+  grid-column: 1 ;
+  grid-row: 3 / span 2;
+}
+
+.content--prj-title-gala {
+  grid-column: 2 ;
+  grid-row: 3;
+}
+
+.content--prj-text-gala {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.content--prj-icon-smile {
+  grid-column: 1 ;
+  grid-row: 5 / span 2;
+}
+
+.content--prj-title-smile {
+  grid-column: 2 ;
+  grid-row: 5;
+}
+
+.content--prj-text-smile {
+  grid-column: 2;
+  grid-row: 6;
+}
+
+.content--prj-icon-garden {
+  grid-column: 1 ;
+  grid-row: 7 / span 2;
+}
+
+.content--prj-title-garden {
+  grid-column: 2 ;
+  grid-row: 7;
+}
+
+.content--prj-text-garden {
+  grid-column: 2;
+  grid-row: 8;
+}
+
+.content--prj-icon-pantry {
+  grid-column: 1 ;
+  grid-row: 9 / span 2;
+}
+
+.content--prj-title-pantry {
+  grid-column: 2 ;
+  grid-row: 9;
+}
+
+.content--prj-text-pantry {
+  grid-column: 2;
+  grid-row: 10;
+}
+
 
 /* Design: Layout */
  
