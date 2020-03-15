@@ -1,4 +1,7 @@
 /* Individual portfolio item styles */
+section {
+  padding: 3em 2em;
+}
 
 .portfolio-item-individual {
     padding: 0 2em 2em;
@@ -6,14 +9,26 @@
     margin: 0 auto;
 }
 
-.btn-website-repo {
-  display: flex;
-  justify-content: space-evenly;
+/* Overview */
+
+.overview__btns a {
+  display: block;
+  margin: 1em auto;
+  max-width: max-content;
+}
+
+@media (min-width: 700px) {
+  .overview__btns {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .btn-prj-info {
   border-radius: 7px;
 }
+
+/* Team */
 
 .team {
   display: grid;
@@ -77,3 +92,23 @@
         grid-template-columns: repeat(4, 1fr);
     }
 }
+
+/* Theme, Audience, and Purpose */
+
+/* Content */
+
+/* Design: Layout */
+ 
+/* Design: Style */
+
+/* Design: Putting it All Together */
+
+/* Building the Newsletter */
+
+/* The Final Product */
+
+/* Technologies and Tools Used */
+
+/* Things I Learned */
+
+/* Future Improvements to Make */
