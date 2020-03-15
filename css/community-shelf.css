@@ -216,6 +216,22 @@ section {
   grid-row: 10;
 }
 
+.btn-wrapper img{
+  margin: 0 auto;
+}
+
+.content--prj-vid-img {
+  margin: 0 auto;
+}
+
+@media (min-width: 700px) {
+  .content--prj-videos {
+    display: flex;
+    justify-content: space-around;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
 
 /* Design: Layout */
  
