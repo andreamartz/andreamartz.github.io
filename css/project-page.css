@@ -15,7 +15,65 @@
   border-radius: 7px;
 }
 
-.team-img {
+.team {
+  display: grid;
+  grid-gap: 2em;
+  grid-template-areas:
+    "title"
+    "team-text"
+    "img-one"
+    "list-one"
+    "img-two"
+    "list-two";
+  margin: 0 auto;
+  align-items: center;
+}
+
+.team__img {
+  justify-self: center;
   box-shadow: var(--bs);
   border-radius: 50%;
+  max-width: 175px;
+}
+
+.section__title--team {
+  grid-area: title;
+}
+
+.team p {
+  grid-area: team-text;
+}
+
+.team__img--one {
+  grid-area: img-one;
+}
+
+.team__list-one {
+  grid-area: list-one;
+}
+
+.team__img--two {
+  grid-area: img-two;
+}
+
+.team__list-two {
+  grid-area: list-two;
+}
+
+@media (max-width: 760px) {
+    .team__img {
+      max-width: 150px;
+    }
+}
+
+@media (min-width: 600px) {
+    .team {
+        margin: 0 auto;
+        grid-template-areas: 
+            "title title title title"
+            "team-text team-text team-text team-text"
+            "img-one list-one list-one list-one"
+            "list-two list-two list-two img-two";
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
