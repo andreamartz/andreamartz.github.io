@@ -1,0 +1,371 @@
+/* Custom Properties - Project Specific */
+
+:root {
+  --ff-prj-primary: 'Arial', sans-serif;
+
+  --fs-prj-title: 1.125rem;
+  --fs-prj-body: .875rem;
+  
+  --clr-prj-lt-green: #d1eecc;
+  --clr-prj-blue-green: #76dbd1;
+  --clr-prj-dk-green: #57a99a;
+  --clr-prj-dark: #000;
+}
+
+/* Individual portfolio item styles */
+section {
+  padding: 3em 2em;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.portfolio-item-individual {
+    padding: 0 2em 2em;
+    margin: 0 auto;
+}
+
+.btn--wrapper {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Overview */
+
+.overview__btns a {
+  display: block;
+  margin: 1em auto;
+  max-width: max-content;
+}
+
+@media (min-width: 700px) {
+  .overview__btns {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+/* Team */
+
+.team {
+  display: grid;
+  grid-gap: 2em;
+  grid-template-areas:
+    "title"
+    "team-text"
+    "img-one"
+    "list-one"
+    "img-two"
+    "list-two";
+  margin: 0 auto;
+  align-items: center;
+}
+
+.team__img {
+  justify-self: center;
+  box-shadow: var(--bs);
+  border-radius: 50%;
+  max-width: 175px;
+}
+
+.section__title--team {
+  grid-area: title;
+}
+
+.team p {
+  grid-area: team-text;
+}
+
+.team__img--one {
+  grid-area: img-one;
+}
+
+.team__list-one {
+  grid-area: list-one;
+}
+
+.team__img--two {
+  grid-area: img-two;
+}
+
+.team__list-two {
+  grid-area: list-two;
+}
+
+@media (max-width: 760px) {
+    .team__img {
+      max-width: 150px;
+    }
+}
+
+@media (min-width: 600px) {
+    .team {
+        margin: 0 auto;
+        grid-template-areas: 
+            "title title title title"
+            "team-text team-text team-text team-text"
+            "img-one list-one list-one list-one"
+            "list-two list-two list-two img-two";
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Theme, Audience, and Purpose */
+
+/* Content */
+.content__grid img {
+  margin: .5em auto;
+}
+
+.content--prj {
+  font-family: var(--ff-prj-primary);
+  font-size: var(--fs-prj-body);
+  color: var(--clr-prj-dark);
+  margin: 0;
+}
+
+.btn-cta {
+  margin: 0 auto;
+  max-width: 200px;
+}
+
+.content--prj-vid-img {
+  margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+  .content__grid {
+    display: grid;
+    grid-gap: .5em;
+    grid-template-columns: 1fr 4fr;
+    margin: 3em auto;
+    align-items: center;
+    max-width: 600px;
+  }
+
+  .content--prj--title {
+    color: var(--clr-prj-dk-green);
+    font-size: var(--fs-prj-title);
+    align-self: end;
+  }
+
+  .content--prj--text {
+    color: var(--clr-prj-dark);
+    font-size: var(--fs-prj-body);
+    align-self: start;
+    line-height: 1;
+  }
+
+  .content--prj-icon-driver {
+    grid-column: 1 ;
+    grid-row: 1 / span 2;
+  }
+
+  .content--prj-title-driver {
+    grid-column: 2 ;
+    grid-row: 1;
+  }
+
+  .content--prj-text-driver {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .content--prj-icon-gala {
+    grid-column: 1 ;
+    grid-row: 3 / span 2;
+  }
+
+  .content--prj-title-gala {
+    grid-column: 2 ;
+    grid-row: 3;
+  }
+
+  .content--prj-text-gala {
+    grid-column: 2;
+    grid-row: 4;
+  }
+
+  .content--prj-icon-smile {
+    grid-column: 1 ;
+    grid-row: 5 / span 2;
+  }
+
+  .content--prj-title-smile {
+    grid-column: 2 ;
+    grid-row: 5;
+  }
+
+  .content--prj-text-smile {
+    grid-column: 2;
+    grid-row: 6;
+  }
+
+  .content--prj-icon-garden {
+    grid-column: 1 ;
+    grid-row: 7 / span 2;
+  }
+
+  .content--prj-title-garden {
+    grid-column: 2 ;
+    grid-row: 7;
+  }
+
+  .content--prj-text-garden {
+    grid-column: 2;
+    grid-row: 8;
+  }
+
+  .content--prj-icon-pantry {
+    grid-column: 1 ;
+    grid-row: 9 / span 2;
+  }
+
+  .content--prj-title-pantry {
+    grid-column: 2 ;
+    grid-row: 9;
+  }
+
+  .content--prj-text-pantry {
+    grid-column: 2;
+    grid-row: 10;
+  }
+
+  .btn-cta {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 700px) {
+  .content--prj-videos {
+    display: flex;
+    justify-content: space-around;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+/* Design: Layout */
+
+.layout__grid img,
+.layout__grid--title {
+  margin: 1.5em auto;
+  text-align: center;
+}
+
+.layout__grid--inspiration-img,
+.layout__grid--wireframe-img {
+  max-width: 298px;
+}
+
+@media (min-width: 700px) {
+  .layout__grid {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1000px;
+    margin: 2em auto;
+  }
+
+  .layout__grid img,
+  .layout__grid--title {
+    margin: 0;
+  }
+  .layout__grid--title-inspiration {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .layout__grid--inspiration {
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: center;
+  }
+
+  .layout__grid--title-wireframe {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .layout__grid--wireframe {
+    grid-column: 2;
+    grid-row: 2;
+    height: 100%;
+    justify-self: center;
+  }
+
+  .layout__grid--inspiration-img,
+  .layout__grid--wireframe-img {
+    max-width: 100%;
+  }
+}
+
+/* Design: Style */
+
+.style-guide {
+  margin: 1em auto;
+}
+
+@media (min-width: 700px) {
+  .style-guide {
+    min-width: 500px;
+  }
+
+  /* .style__grid {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 1fr 3fr;
+    max-width: 1000px;
+    margin: 2em auto;
+  }
+
+  .style__shape-two {
+    width: 63%;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .layout__grid img,
+  .layout__grid--title {
+    margin: 0;
+  }
+  .layout__grid--title-inspiration {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .layout__grid--inspiration {
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: center;
+  }
+
+  .layout__grid--title-wireframe {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .layout__grid--wireframe {
+    grid-column: 2;
+    grid-row: 2;
+    height: 100%;
+    justify-self: center;
+  }
+
+  .layout__grid--inspiration-img,
+  .layout__grid--wireframe-img {
+    max-width: 100%;
+  } */
+}
+
+
+/* Design: Putting it All Together */
+
+/* Building the Newsletter */
+
+/* The Final Product */
+
+/* Technologies and Tools Used */
+
+/* Things I Learned */
+
+/* Future Improvements to Make */
