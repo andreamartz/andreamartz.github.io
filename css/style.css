@@ -94,6 +94,11 @@ strong {
     transform: scale(1.1);
 }
 
+/* Icons */
+.email-icon {
+    color: var(--clr-accent);
+}
+
 /* Typography */
 
 h1,
@@ -400,15 +405,13 @@ header {
     }
 }
 
-.contact:hover,
-.contact:focus {
-    font-weight: var(--fw-bold);
-}
-
 .contact {
     text-decoration: none;
     color: inherit;
+}
 
+.contact-text:hover {
+    font-weight: 600;
 }
 
 /* My Work */
