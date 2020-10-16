@@ -404,12 +404,12 @@ header {
     }
 }
 
-.contact {
+.link {
     text-decoration: none;
     color: inherit;
 }
 
-.contact-text:hover {
+.link-text:hover {
     font-weight: 600;
 }
 
