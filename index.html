@@ -19,7 +19,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
     integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,400,600,900&display=swap"
     rel="stylesheet" />
 
   <link rel="stylesheet" href="css/style.css" />
@@ -106,7 +107,11 @@
       </p>
       <p>Looking to hire a web developer?</p>
       <a class="contact" href="mailto:hello@andreamartz.dev">
-        <p>Let's talk!</p>
+        <p class="contact-text">Let's talk!
+          <span>
+            <i class="fas fa-envelope email-icon contact-text"></i>
+          </span>
+        </p>
       </a>
     </div>
 
@@ -121,38 +126,71 @@
     <!-- Front-end projects -->
     <div class="portfolio">
       <!-- Portfolio item 01: Authentic Grace -->
-      <a href="https://andreamartz.dev/mcc-authentic-grace/" class="portfolio__item" target="_blank" rel="noreferrer">
-        <img src="img/my-work-websites/authentic-grace-mockup-square.PNG"
-          alt="iPad showing home page of Authentic Grace website" class="portfolio__img" />
-      </a>
+      <div class="portfolio__item portfolio__item__container">
+        <a href="https://andreamartz.dev/mcc-authentic-grace/" target="_blank" rel="noreferrer">
+          <img src="img/my-work-websites/authentic-grace-mockup-square.PNG"
+            alt="iPad showing home page of Authentic Grace website" class="portfolio__img" />
+        </a>
+        <a href="https://andreamartz.dev/mcc-authentic-grace/" target="_blank" rel="noreferrer">
+          <button class="btn portfolio__item__btn">Authentic Grace</button>
+        </a>
+      </div>
+      <!-- </a> -->
 
       <!-- Portfolio item 02: Jeopardy -->
-      <a href="http://andreamartz.dev/sb-15-jeopardy/" class="portfolio__item" target="_blank" rel="noreferrer">
-        <img src="img/my-work-websites/jeopardy-on-laptop.png" alt="screenshot of Jeopardy game"
-          class="portfolio__img" />
-      </a>
+      <div class="portfolio__item portfolio__item__container">
+        <a href="http://andreamartz.dev/sb-15-jeopardy/" target="_blank" rel="noreferrer">
+          <img src="img/my-work-websites/jeopardy-on-laptop.png" alt="screenshot of Jeopardy game"
+            class="portfolio__img" />
+        </a>
+        <a href="http://andreamartz.dev/sb-15-jeopardy/" target="_blank" rel="noreferrer">
+          <button class="btn portfolio__item__btn">Jeopardy</button>
+        </a>
+      </div>
 
       <!-- Portfolio item 03: Memory game -->
-      <a href="http://andreamartz.dev/sb-memory-game/" class="portfolio__item" target="_blank" rel="noreferrer">
-        <img src="img/sb-memory-game.png" alt="screenshot of memory game" class="portfolio__img" />
-      </a>
+      <div class="portfolio__item portfolio__item__container">
+        <a href="http://andreamartz.dev/sb-memory-game/" target="_blank" rel="noreferrer">
+          <img src="img/sb-memory-game.png" alt="screenshot of memory game" class="portfolio__img" />
+        </a>
+        <a href="http://andreamartz.dev/sb-memory-game/" target="_blank" rel="noreferrer">
+          <button class="btn portfolio__item__btn">Memory Game</button>
+        </a>
+      </div>
 
       <!-- Portfolio item 04: Bread Beacon -->
-      <a href="https://breadbeacon.netlify.com/" class="portfolio__item" target="_blank" rel="noreferrer">
-        <img src="img/my-work-websites/bread-beacon-mockup-square.PNG"
-          alt="computer screen showing Bread Beacon homepage" class="portfolio__img" />
-      </a>
+      <div class="portfolio__item portfolio__item__container">
+        <a href="https://breadbeacon.netlify.com/" target="_blank" rel="noreferrer">
+          <img src="img/my-work-websites/bread-beacon-mockup-square.PNG"
+            alt="computer screen showing Bread Beacon homepage" class="portfolio__img" />
+        </a>
+        <a href="https://breadbeacon.netlify.com/" target="_blank" rel="noreferrer">
+          <button class="btn portfolio__item__btn">Bread Beacon</button>
+        </a>
+      </div>
+
 
       <!-- Portfolio item 05: Email Newsletter -->
-      <a href="https://andreamartz.dev/Email-Newsletter/" class="portfolio__item" target="_blank" rel="noreferrer">
-        <img src="img/my-work-websites/email-newsletter-mockup-square.png"
-          alt="computer screen showing email newsletter" class="portfolio__img" />
-      </a>
+      <div class="portfolio__item portfolio__item__container">
+        <a href="https://andreamartz.dev/Email-Newsletter/" target="_blank" rel="noreferrer">
+          <img src="img/my-work-websites/email-newsletter-mockup-square.png"
+            alt="computer screen showing email newsletter" class="portfolio__img" />
+        </a>
+        <a href="https://andreamartz.dev/Email-Newsletter/" target="_blank" rel="noreferrer">
+          <button class="btn portfolio__item__btn">Community Shelf</button>
+        </a>
+      </div>
+
 
       <!-- Portfolio item 06: Meme generator -->
-      <a href="http://andreamartz.dev/sb-meme-generator/" class="portfolio__item" target="_blank" rel="noreferrer">
-        <img src="img/sb-meme-generator.png" alt="screenshot of meme generator" class="portfolio__img" />
-      </a>
+      <div class="portfolio__item portfolio__item__container">
+        <a href="http://andreamartz.dev/sb-meme-generator/" target="_blank" rel="noreferrer">
+          <img src="img/sb-meme-generator.png" alt="screenshot of meme generator" class="portfolio__img" />
+        </a>
+        <a href="http://andreamartz.dev/sb-meme-generator/" target="_blank" rel="noreferrer">
+          <button class="btn portfolio__item__btn">Make a Meme</button>
+        </a>
+      </div>
     </div>
 
     <!-- Publications and Presentations -->
