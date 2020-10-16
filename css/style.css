@@ -456,11 +456,23 @@ header {
     opacity: .5;
 }
 
+.portfolio__item__container {
+    position: relative;
+}
+
 .portfolio__item__btn {
     padding: .75em 1.5em;
     opacity: 0.87;
     font-size: 1.07rem;
     letter-spacing: 1px;
+}
+
+.portfolio__item__container .portfolio__item__btn {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    -ms-transform: translate(-50%);
 }
 
 /* footer */
