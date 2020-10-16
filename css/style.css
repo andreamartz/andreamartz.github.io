@@ -83,7 +83,6 @@ strong {
     color: var(--clr-dark);
     text-decoration: none;
     cursor: pointer;
-    /* font-size: .8rem; */
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
@@ -457,6 +456,12 @@ header {
     opacity: .5;
 }
 
+.portfolio__item__btn {
+    padding: .75em 1.5em;
+    opacity: 0.87;
+    font-size: 1.07rem;
+    letter-spacing: 1px;
+}
 
 /* footer */
 
