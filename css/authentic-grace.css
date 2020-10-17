@@ -5,7 +5,7 @@
 
   --fs-prj-title: 1.125rem;
   --fs-prj-body: .875rem;
-  
+
   --clr-prj-lt-green: #d1eecc;
   --clr-prj-blue-green: #76dbd1;
   --clr-prj-dk-green: #57a99a;
@@ -20,8 +20,8 @@ section {
 }
 
 .portfolio-item-individual {
-    padding: 0 2em 2em;
-    margin: 0 auto;
+  padding: 0 2em 2em;
+  margin: 0 auto;
 }
 
 .btn--wrapper {
@@ -105,21 +105,21 @@ section {
 }
 
 @media (max-width: 760px) {
-    .team__img {
-      max-width: 150px;
-    }
+  .team__img {
+    max-width: 150px;
+  }
 }
 
 @media (min-width: 600px) {
-    .team {
-        margin: 0 auto;
-        grid-template-areas: 
-            "title title title title"
-            "team-text team-text team-text team-text"
-            "img-one list-one list-one list-one"
-            "list-two list-two list-two img-two";
-        grid-template-columns: repeat(4, 1fr);
-    }
+  .team {
+    margin: 0 auto;
+    grid-template-areas:
+      "title title title title"
+      "team-text team-text team-text team-text"
+      "img-one list-one list-one list-one"
+      "list-two list-two list-two img-two";
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 /* Theme, Audience, and Purpose */
@@ -169,12 +169,12 @@ section {
   }
 
   .content--prj-icon-driver {
-    grid-column: 1 ;
+    grid-column: 1;
     grid-row: 1 / span 2;
   }
 
   .content--prj-title-driver {
-    grid-column: 2 ;
+    grid-column: 2;
     grid-row: 1;
   }
 
@@ -184,12 +184,12 @@ section {
   }
 
   .content--prj-icon-gala {
-    grid-column: 1 ;
+    grid-column: 1;
     grid-row: 3 / span 2;
   }
 
   .content--prj-title-gala {
-    grid-column: 2 ;
+    grid-column: 2;
     grid-row: 3;
   }
 
@@ -199,12 +199,12 @@ section {
   }
 
   .content--prj-icon-smile {
-    grid-column: 1 ;
+    grid-column: 1;
     grid-row: 5 / span 2;
   }
 
   .content--prj-title-smile {
-    grid-column: 2 ;
+    grid-column: 2;
     grid-row: 5;
   }
 
@@ -214,12 +214,12 @@ section {
   }
 
   .content--prj-icon-garden {
-    grid-column: 1 ;
+    grid-column: 1;
     grid-row: 7 / span 2;
   }
 
   .content--prj-title-garden {
-    grid-column: 2 ;
+    grid-column: 2;
     grid-row: 7;
   }
 
@@ -229,12 +229,12 @@ section {
   }
 
   .content--prj-icon-pantry {
-    grid-column: 1 ;
+    grid-column: 1;
     grid-row: 9 / span 2;
   }
 
   .content--prj-title-pantry {
-    grid-column: 2 ;
+    grid-column: 2;
     grid-row: 9;
   }
 
@@ -283,6 +283,7 @@ section {
   .layout__grid--title {
     margin: 0;
   }
+
   .layout__grid--title-inspiration {
     grid-column: 1;
     grid-row: 1;
