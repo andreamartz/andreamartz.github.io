@@ -11,6 +11,7 @@
     --ff-secondary: 'Source Code Pro', monospace;
 
     --fw-reg: 300;
+    --fw-semi-bold: 600;
     --fw-bold: 900;
 
     --clr-light: #fff;
@@ -410,7 +411,7 @@ header {
 }
 
 .link-text:hover {
-    font-weight: 600;
+    font-weight: var(--fw-semi-bold);
 }
 
 /* My Work */
