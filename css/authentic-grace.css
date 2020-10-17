@@ -31,17 +31,30 @@ section {
 
 /* Overview */
 
-.overview__btns a {
-  display: block;
-  margin: 1em auto;
-  max-width: max-content;
+.btns-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@media (min-width: 700px) {
-  .overview__btns {
-    display: flex;
-    justify-content: space-around;
-  }
+.prj-btn-container {
+  justify-self: center;
+  margin: .5em;
+}
+
+.prj-btn {
+  padding: .75em 1.5em;
+  opacity: 0.87;
+  font-size: 1.07rem;
+  letter-spacing: 1px;
+}
+
+.prj-btn-github {
+  padding-left: 1.9em;
+  padding-right: 1.9em;
 }
 
 /* Team */
