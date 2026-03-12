@@ -453,7 +453,7 @@ header {
 
 .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img {
-    transform: scale(1.2);
+    transform: scale(1.1);
     opacity: .5;
 }
 
@@ -468,6 +468,19 @@ header {
     letter-spacing: 1px;
 }
 
+.portfolio__item__p {
+    color: var(--clr-dark);
+    margin: 0;
+    padding: 0.5em 0.75em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.9);
+    background: var(--clr-accent);
+    opacity: 0.87;
+}
 .portfolio__item__container .portfolio__item__btn {
     position: absolute;
     bottom: 5%;
@@ -484,7 +497,6 @@ header {
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
-
 }
 
 .footer a {
