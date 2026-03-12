@@ -470,6 +470,7 @@ header {
 
 .portfolio__item__p {
     color: var(--clr-dark);
+    letter-spacing: 0px;
     margin: 0;
     padding: 0.5em 0.75em;
     position: absolute;
@@ -477,10 +478,38 @@ header {
     left: 0;
     right: 0;
     z-index: 2;
-    background: rgba(255, 255, 255, 0.9);
     background: var(--clr-accent);
     opacity: 0.87;
 }
+
+.portfolio__item__modal {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: rgba(17, 17, 17, 0.92);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 220ms ease;
+    z-index: 3;
+}
+
+.portfolio__item__modal__text {
+    color: var(--clr-light);
+    margin: 0;
+    max-width: 32ch;
+    text-align: center;
+}
+
+.portfolio__item__container--modal:hover .portfolio__item__modal,
+.portfolio__item__container--modal:focus-within .portfolio__item__modal {
+    opacity: 1;
+    visibility: visible;
+}
+
 .portfolio__item__container .portfolio__item__btn {
     position: absolute;
     bottom: 5%;
