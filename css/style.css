@@ -462,10 +462,10 @@ header {
 }
 
 .portfolio__item__btn {
-    padding: .75em 1.5em;
+    padding: .5em .75em;
     opacity: 0.87;
-    font-size: 1.07rem;
-    letter-spacing: 1px;
+    font-size: 0.9rem;
+    letter-spacing: 0px;
 }
 
 .portfolio__item__p {
