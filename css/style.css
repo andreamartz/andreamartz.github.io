@@ -593,6 +593,32 @@ header {
     padding: .5em;
 }
 
-/* .devicon-devicon-plain {
-    max-width: 2em;
-} */
+.social-list__link img {
+    display: block;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.social-list__icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.125em;
+}
+
+.social-list__icon--leetcode {
+    transform: none;
+}
+
+.social-list__link .social-list__icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    object-fit: contain;
+    vertical-align: -0.125em;
+}
+
+.social-list__link .social-list__icon--leetcode {
+    transform: translateY(3px);
+}
