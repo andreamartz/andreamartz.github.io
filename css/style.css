@@ -537,6 +537,19 @@ header {
     visibility: visible;
 }
 
+body.portfolio-modals-suspended .portfolio__item__container--modal:hover .portfolio__item__modal,
+body.portfolio-modals-suspended .portfolio__item__container--modal:focus-within .portfolio__item__modal,
+body.portfolio-modals-suspended .portfolio__item__modal {
+    opacity: 0;
+    visibility: hidden;
+}
+
+body.portfolio-modals-suspended .portfolio__img:hover,
+body.portfolio-modals-suspended .portfolio__item:focus .portfolio__img {
+    transform: none;
+    opacity: 1;
+}
+
 .portfolio__item__actions + .portfolio__item__modal {
     inset: 0 0 4.25rem 0;
 }
